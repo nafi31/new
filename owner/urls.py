@@ -20,7 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("own.urls", namespace='')),
     path('register/', v.register,name="register"),
-    path('/', v.register,name="signup"),
+    path('', v.register,name="signup"),
     path('', include("django.contrib.auth.urls")),
     
 ]
